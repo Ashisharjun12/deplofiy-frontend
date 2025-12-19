@@ -124,6 +124,22 @@ export const projectAPI = {
     const response = await api.put(`/projects/${projectId}`, data);
     return response.data;
   },
+
+  // Custom domain operations
+  addCustomDomain: async (projectId, customDomain) => {
+    const response = await api.post(`/projects/${projectId}/custom-domain`, { customDomain });
+    return response.data;
+  },
+
+  removeCustomDomain: async (projectId) => {
+    const response = await api.delete(`/projects/${projectId}/custom-domain`);
+    return response.data;
+  },
+
+  verifyCustomDomain: async (projectId) => {
+    const response = await api.get(`/projects/${projectId}/custom-domain/verify`);
+    return response.data;
+  },
 };
 
 // GitHub API calls

@@ -67,12 +67,12 @@ const OverviewTab = ({
               <ExternalLink className="h-4 w-4 text-muted-foreground" />
               <span className="text-muted-foreground">URL:</span>
               <a
-                href={`http://${project.subDomain}.localhost:9000`}
+                href={`https://${project.subDomain}.deplofy.cloud`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                {project.subDomain}.localhost:9000
+                {project.subDomain}.deplofy.cloud
               </a>
             </div>
           )}

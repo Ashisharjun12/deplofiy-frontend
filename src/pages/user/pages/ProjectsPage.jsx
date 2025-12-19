@@ -160,7 +160,7 @@ const ThreadsProjectCard = ({ project, deploymentStatuses, onEdit, onDelete, nav
   
   const gitUrl = project.gitUrl || '';
   const deploymentUrl = project.subDomain 
-    ? `http://${project.subDomain}.localhost:9000`
+    ? `https://${project.subDomain}.deplofy.cloud`
     : null;
   const customDomain = project.customDomain || null;
 
@@ -241,7 +241,7 @@ const ThreadsProjectCard = ({ project, deploymentStatuses, onEdit, onDelete, nav
             onClick={(e) => e.stopPropagation()}
           >
             <Globe size={16} className="text-neutral-500 group-hover/link:text-white transition-colors" />
-            <span className="truncate flex-1">{project.subDomain}.localhost:9000</span>
+            <span className="truncate flex-1">{project.subDomain}.deplofy.cloud</span>
             <ArrowUpRight size={14} className="opacity-0 group-hover/link:opacity-100 transition-opacity" />
           </a>
         )}
@@ -249,7 +249,7 @@ const ThreadsProjectCard = ({ project, deploymentStatuses, onEdit, onDelete, nav
         {/* Custom Domain */}
         {customDomain ? (
           <a
-            href={`http://${customDomain}`}
+            href={`https://${customDomain}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-sm text-neutral-400 hover:text-white transition-colors group/link"
