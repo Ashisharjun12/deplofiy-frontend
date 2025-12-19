@@ -32,7 +32,7 @@ const Navbar = () => {
           className="flex items-center"
         >
           <span className="text-xl font-bold tracking-tight">
-            Deploy
+            Deplofiy
           </span>
         </motion.div>
 

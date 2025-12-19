@@ -41,7 +41,7 @@ export function AppSidebar({
 
     const teams = [
       {
-        name: "Deploy Platform",
+        name: "Deplofiy Platform",
         logo: Shield,
         plan: session?.user?.role === 'admin' ? "Admin" : "User",
       },

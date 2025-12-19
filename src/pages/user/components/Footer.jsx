@@ -19,7 +19,7 @@ const Footer = () => {
           className="text-center w-full"
         >
           <h2 className="text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-bold tracking-tight w-full">
-            Deploy
+            Deplofiy
           </h2>
         </motion.div>
       </div>

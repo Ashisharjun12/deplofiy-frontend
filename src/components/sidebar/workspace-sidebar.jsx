@@ -75,7 +75,7 @@ export function WorkspaceSidebar({
             <Rocket className="size-5" />
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold text-base">Deploy</span>
+            <span className="truncate font-semibold text-base">Deplofiy</span>
             <span className="truncate text-xs text-muted-foreground">Workspace</span>
           </div>
         </div>
